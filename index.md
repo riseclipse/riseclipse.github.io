@@ -17,6 +17,14 @@ RiseClipse is currently developed by the computer science department of [Central
 * Another option (only for SCL files for the moment) is to use a [docker image](https://hub.docker.com/r/riseclipse/riseclipse-validator-scl).
 * For more technical usages, see below.
 
+## RiseClipse other topics
+
+* [RiseClipse history](history) (why and when RiseClipse is born)
+* [RiseClipse bugs](bugs) (how to report defects)
+* [RiseClipse technical](technical) (what is the technical basis of RiseClipse)
+* [RiseClipse source code](sourcecode) (where is available the source code)
+* [RiseClipse development](development) (how to contribute to RiseClipse)
+* [RiseClipse contacts](contact) (for any question not answered here)
 
 ## Acronyms with links
 
