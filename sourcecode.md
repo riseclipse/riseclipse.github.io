@@ -11,3 +11,5 @@ The folowing repositories are available:
 * **riseclispe-editor**  (on [GitLab](https://gitlab-research.centralesupelec.fr/RiseClipseGroup/riseclipse-editor) and on [GitHub](https://github.com/riseclipse/riseclipse-editor)): this repository contains a modified EMF generated editor for easier navigation in RiseClipse supported models.
 * **riseclispe-metamodel-scl2003**  (on [GitLab](https://gitlab-research.centralesupelec.fr/RiseClipseGroup/riseclipse-metamodel-scl2003) and on [GitHub](https://github.com/riseclipse/riseclipse-metamodel-scl2003)): this repository contains a RiseClipse metamodel for the [IEC 61850 SCL standard](https://webstore.iec.ch/publication/63319).
 * **riseclispe-metamodel-nsd2016**  (on [GitLab](https://gitlab-research.centralesupelec.fr/RiseClipseGroup/riseclipse-metamodel-nsd2016) and on [GitHub](https://github.com/riseclipse/riseclipse-metamodel-nsd2016)): this repository contains a RiseClipse metamodel for the [IEC 61850 NSD standard](https://webstore.iec.ch/publication/29018).
+
+... to be completed
