@@ -24,7 +24,7 @@ RiseClipse is currently developed by the computer science department of [Central
 * [RiseClipse technical](technical) (what is the technical basis of RiseClipse)
 * [RiseClipse source code](sourcecode) (where is available the source code)
 * [RiseClipse development](development) (how to contribute to RiseClipse)
-* [RiseClipse contacts](contact) (for any question not answered here)
+* [RiseClipse faq and contacts](contacts) (for any question not answered here)
 
 ## Acronyms with links
 
