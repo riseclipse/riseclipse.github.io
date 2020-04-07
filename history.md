@@ -28,12 +28,12 @@ RiseClipse has been [presented](https://wdi.centralesupelec.fr/software/download
 at the [19th Power Systems Computation Conference](http://www.pscc2016.net/) in June 2016 in Genoa. The full 
 article is available [here](https://pscc-central.epfl.ch/repo/papers/2016/411.pdf).
 
-# Contributers to RiseClipse
+# Contributors to RiseClipse
 
 Each year, since 2008, some students from CentraleSupélec, thanks to [EDF R&D](https://www.edf.fr/en/the-edf-group/who-we-are/activities/research-and-development), contribute to RiseClipse (and to CimClipse before) as part 
 of their curriculum. 
 * 2019-20: Hui Shan Soon & Nora Hechelef (UML for 61850), Elise Moris & Nicolas Baouaya-Moulomba (automatic transformations 
-from model updates), Freddy Chung & Kouroche Mazaheri (keeping time when data change)
+from model updates), Freddy Chung & Kouroche Mazaheri (time and data changes)
 * 2018-19: Pedro Donini Linan & Grégoire Carrere-Gee (NSD4RiseClipse), Nicolas David & Jeremy Benzakein 
 (CIM – 61850 Harmonisation)
 * 2017-18: Julien Hemery & Chloé Mercier (OptimRiseClipse), Eugène Nélou & Benoit Picard--Bellance (Zest4RiseClipse), 
