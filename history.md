@@ -1,5 +1,7 @@
 # RiseClipse history
 
+![Logo RiseClipe](img/small_logo_riseclipse.png)
+
 The collaboration on the [CIM](https://en.wikipedia.org/wiki/Common_Information_Model_(electricity)) standard 
 between the computer science department of [Supélec](https://fr.wikipedia.org/wiki/École_supérieure_d%27électricité) 
 (now [CentraleSupélec](http://www.centralesupelec.fr/)) and the 

@@ -1,5 +1,7 @@
 # RiseClipse source code
 
+![Logo RiseClipe](img/small_logo_riseclipse.png)
+
 RiseClipse is written in Java and based on the [Eclipse](https://www.eclipse.org) platform.
 
 The code of open source RiseClipse components is available here:

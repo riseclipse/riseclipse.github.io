@@ -1,5 +1,7 @@
 # RiseClipse faq and contacts
 
+![Logo RiseClipe](img/small_logo_riseclipse.png)
+
 ## faq
 
 ... to be completed
