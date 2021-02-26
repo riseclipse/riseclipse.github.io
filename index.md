@@ -27,8 +27,7 @@ Institute](https://www.centralesupelec.fr/fr/risegrid-institute-research-institu
 * The simplest solution to validate CIM and SCL files is to use the 
 [web site provided by EDF](https://rise-clipse.pam-retd.fr/).
 * You can also download « fat jar » tools on [RiseClipse downloads](downloads) (either with a command line interface or with a 
-simplified graphical user interface) available on 
-[this page](https://wdi.centralesupelec.fr/software/RiseClipse/Downloads). 
+simplified graphical user interface). 
 A Java 8 JRE is required to run them.
 * Another option (only for SCL files for the moment) is to use a 
 [docker image](https://hub.docker.com/r/riseclipse/riseclipse-validator-scl).
