@@ -37,6 +37,7 @@ A Java 8 JRE is required to run them.
 
 * [RiseClipse history](history) (why and when RiseClipse is born)
 * [RiseClipse bugs](bugs) (how to report defects)
+* [RiseClipse advanced use](advanced) (other ways to use RiseClipse)
 * [RiseClipse technical](technical) (what is the technical basis of RiseClipse)
 * [RiseClipse source code](sourcecode) (where is available the source code)
 * [RiseClipse development](development) (how to contribute to RiseClipse)
