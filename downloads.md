@@ -6,7 +6,7 @@
 This validator can use OCL and NSD files. This is « Work In Progress » because NSD support is incomplete (NOT IMPLEMENTED messages are sometimes displayed).
 
 ### Validator for a command line use
-* Download [this jar file](downloads/RiseClipseValidatorSCL-1.1.0-a20.jar) somewhere
+* Download [this jar file](downloads/RiseClipseValidatorSCL-1.1.0-a21.jar) somewhere
 * Use it (java -jar RiseClipseValidatorSCL-1.1.0-a21.jar) in a Terminal/Cmd window; the command line arguments are given in a usage message
 * OCL files for SCL are available in [this archive](downloads/SCL_OCL.zip); the latest version are available in [this repository](https://github.com/riseclipse/riseclipse-ocl-constraints-scl2003)
 
