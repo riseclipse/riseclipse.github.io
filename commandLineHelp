@@ -39,6 +39,7 @@
     at the end of the command line
             
    ## Example of use
-   java -jar RiseClipseValidatorSCL.jar --make-explicit-links OCL/Helpers/* OCL/RequiredAttributes/* OCL/RequiredElements/* OCL/SemanticConstraints/* fileToValidate.icd IEC_61850-7-2_2007B.nsd IEC_61850-7-3_2007B.nsd IEC_61850-7-4_2007B.nsd IEC_61850-8-1_2003.snsd ApplicableServiceNS.AppNS >RiseClipseValidationResult.txt
+   
+   java -jar RiseClipseValidatorSCL-1.1.0-a22.jar --make-explicit-links fileToValidate.icd SCL_OCL NSD >Result.txt
 
    
