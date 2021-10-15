@@ -1,9 +1,9 @@
-# RiseClipse Guide – Installation and OCL (25 may 2021)
+# RiseClipse Guide – Installation and OCL (15 October 2021)
 
 ![Logo RiseClipe](img/small_logo_riseclipse.png)
 
 ### Download and install Eclipse Modelling
-Install Eclipse Modelling 2019-06 : [2019-06 R | Eclipse Packages](https://www.eclipse.org/downloads/packages/release/2019-06/r)
+Install Eclipse Modelling 2021-09 : [2021-09 R | Eclipse Packages](https://www.eclipse.org/downloads/packages/release/2021-09/r)
 
 ### Install the necessary plug-ins
 To install a plugin in Eclipse, go to: Help -> Install New Software, 
@@ -11,7 +11,7 @@ To install a plugin in Eclipse, go to: Help -> Install New Software,
 click on “What is already installed”, and check if the following points are intalled,
 
 otherwise, install them :
-- In “Work with” put : 2019-06 - http://download.eclipse.org/releases/2019-06 
+- In “Work with” put : 2021-09 - http://download.eclipse.org/releases/2021-09 
 - select the plugins to install :
   -	Eclipse SDK
   -	Eclipse Project SDK

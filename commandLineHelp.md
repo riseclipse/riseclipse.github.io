@@ -42,6 +42,6 @@ at the end of the command line is also possible.
             
    ## Example of use
    
-    java -jar RiseClipseValidatorSCL-1.1.0-a23.jar --make-explicit-links fileToValidate.icd OCL NSD >Result.txt
+    java -jar RiseClipseValidatorSCL-1.1.0-a24.jar --make-explicit-links fileToValidate.icd OCL NSD >Result.txt
 
    
