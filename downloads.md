@@ -2,7 +2,7 @@
 
 ![Logo RiseClipe](img/small_logo_riseclipse.png)
 
-## Validator for IEC 61850 SCL 2003 (version 1.1.0 a24 - 15 October 2021, a Java runtime - at least version 11 - is required)
+## Validator for IEC 61850 SCL 2003 (version 1.1.0 a24 - 20 Janvier 2022, a Java runtime - at least version 11 - is required)
 This validator can use OCL and NSD files. This is « Work In Progress » because NSD support is incomplete (NOT IMPLEMENTED messages are sometimes displayed).
 
 ### Validator for a command line use
@@ -20,7 +20,7 @@ This validator can use OCL and NSD files. This is « Work In Progress » because
 * Start the validation using the Validate button in the "SCL Files" tab
 * A new Window will appeared with one general tab and one for each SCL file
 
-## OCL Validators for ENTSO-E CGMES v2.4.15 (version 1.1.0-a3 - 15 October 2021, a Java runtime - at least version 11 - is required)
+## OCL Validators for ENTSO-E CGMES v2.4.15 (version 1.1.0-a3 - 20 Janvier 2022, a Java runtime - at least version 11 - is required)
 ### Validator for a command line use
 * Download [this jar file](downloads/RiseClipseEntsoeCim16Validator-1.1.0-a3.jar) somewhere
 * Use it (`java -jar RiseClipseValidatorCGMES-1.1.0-a3.jar`) in a Terminal/Cmd window; the command line arguments are given in a usage message

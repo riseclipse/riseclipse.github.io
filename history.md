@@ -34,6 +34,7 @@ article is available [here](https://pscc-central.epfl.ch/repo/papers/2016/411.pd
 
 Each year, since 2008, some students from CentraleSupélec, thanks to [EDF R&D](https://www.edf.fr/en/the-edf-group/who-we-are/activities/research-and-development), contribute to RiseClipse (and to CimClipse before) as part 
 of their curriculum. 
+* 2021-22: Armel Chausse & Alexandre Soares & Timothé Bailly-Barthez (DevOps pour RiseClipse avec GitHub)
 * 2019-20: Hui Shan Soon & Nora Hechelef (UML for 61850), Elise Moris & Nicolas Baouaya-Moulomba (automatic transformations 
 from model updates), Freddy Chung & Kouroche Mazaheri (time and data changes)
 * 2018-19: Pedro Donini Linan & Grégoire Carrere-Gee (NSD4RiseClipse), Nicolas David & Jeremy Benzakein 
