@@ -20,6 +20,23 @@ This validator can use OCL and NSD files. This is « Work In Progress » because
 * Start the validation using the Validate button in the "SCL Files" tab
 * A new Window will appeared with one general tab and one for each SCL file
 
+### Pre-release versions of validators
+These versions have added features; they are made available for testing purposes, any feedback is welcome by sending mail to Dominique MARCADET (dominique.marcadet *at* centralesupelec.fr).
+
+#### Configurable output
+* This version offers an option to configure the messages outputted by the validator.
+* It is available [here](https://wdi.centralesupelec.fr/software/downloads/RiseClipse/RiseClipseValidatorSCL-1.1.0-a25rc.jar)
+* The --help option explain how to use it
+* OCL files have been updated for this version, they can be downloaded [here](https://wdi.centralesupelec.fr/software/downloads/RiseClipse/OCL-New-Message-Format.zip)
+
+#### Namespaces support
+* The current version supports only IEC_61850-7 Edition 2.1. This version try to support 
+multiple namespaces, including using both IEC_61850-7-2007A and IEC_61850-7-2007B in the 
+same SCL file
+* It is available [here](https://wdi.centralesupelec.fr/software/downloads/RiseClipse/RiseClipseValidatorSCL-1.1.0-a26rc.jar)
+* The corresponding NSD files must be given on the command line
+* This version supports also the configurable output
+
 ## OCL Validators for ENTSO-E CGMES v2.4.15 (version 1.1.0 a3 - 20 January 2022, a Java runtime - at least version 11 - is required)
 ### Validator for a command line use
 * Download [this jar file](downloads/RiseClipseEntsoeCim16Validator-1.1.0-a3.jar) somewhere
