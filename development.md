@@ -4,7 +4,7 @@
 
 
 ### OCL Presentations and Memos: 
-* [OCL Memo](downloads/UMLOCL-memo.pdf)
+* [OCL Memo](http://www-sop.inria.fr/members/Charles.Andre/CAdoc/ESINSA/UMLOCL-memo.pdf), by Charles Andre, Inria
 * [OCL operations](downloads/OCLoperations.pdf)
 * [Software Engineering (OCL)](downloads/OCL_GL.pdf), by Lina YE, CentraleSupélec
 * [OCL by example](downloads/OCLByExampleLecture.pdf) by Dr Birgit Demuth, Technische Universitat Dresden
