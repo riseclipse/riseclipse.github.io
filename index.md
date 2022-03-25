@@ -31,7 +31,7 @@ simplified graphical user interface).
 A Java runtime - at least version 11 - is required to run them.
 * Another option (only for SCL files for the moment) is to use a 
 [docker image](https://hub.docker.com/r/riseclipse/riseclipse-validator-scl).
-* You can also use [SCL Navigator](https://www.trianglemicroworks.com/products/testing-and-configuration-tools/scl-navigator-pages/overview), a Windows application developped by Triangle Microworks, Inc. The free SCL Reader version of this tool includes RiseClise's SCL validations.
+* Another method is to download a free [SCL Reader](https://www.trianglemicroworks.com/products/testing-and-configuration-tools/scl-navigator-pages/overview) from [Triangle MicroWorks, Inc](https://www.trianglemicroworks.com). First, download a 14 day evaluation license of [SCL Navigator](https://www.trianglemicroworks.com/products/testing-and-configuration-tools/scl-navigator-pages/overview) and apply the product key ‘freetool’. After 14 days, you will continue to have access to a free [SCL Reader](https://www.trianglemicroworks.com/products/testing-and-configuration-tools/scl-navigator-pages/overview) using OCL Verify to validate SCL files based on RiseClipse.
 
     [![TMW_logo](img/tmw_logo_no_url.png)](https://www.trianglemicroworks.com)
 
