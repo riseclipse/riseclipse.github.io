@@ -33,11 +33,11 @@ A Java runtime - at least version 11 - is required to run them.
 [docker image](https://hub.docker.com/r/riseclipse/riseclipse-validator-scl).
 * Another method is to download a free [SCL Reader](https://www.trianglemicroworks.com/products/testing-and-configuration-tools/scl-navigator-pages/overview) from [Triangle MicroWorks, Inc](https://www.trianglemicroworks.com). First, download a 14 day evaluation license of [SCL Navigator](https://www.trianglemicroworks.com/products/testing-and-configuration-tools/scl-navigator-pages/overview) and apply the product key ‘freetool’. After 14 days, you will continue to have access to a free [SCL Reader](https://www.trianglemicroworks.com/products/testing-and-configuration-tools/scl-navigator-pages/overview) using OCL Verify to validate SCL files based on RiseClipse.
 
-    [![TMW_logo](img/TMW_logo_black-072dpi.jpg)](https://www.trianglemicroworks.com)
+     [![TMW_logo](img/TMW_logo_black-072dpi.jpg)](https://www.trianglemicroworks.com)
 
-* COMPAS project, (Co)nfiguration (M)odules for (P)ower industry (A)utomation (S)ystems, from [LFEnergy](https://www.lfenergy.org/projects/compas/) provides a [service to validate SCL Files](https://github.com/com-pas/compas-scl-validator) that uses RiseClipse
+* COMPAS project, (Co)nfiguration (M)odules for (P)ower industry (A)utomation (S)ystems, from [LFEnergy](https://www.lfenergy.org/projects/compas/) also provides a [service to validate SCL Files](https://github.com/com-pas/compas-scl-validator) that uses RiseClipse
 
-    [![COMPAS_logo](img/compas.png)](https://www.lfenergy.org/projects/compas/)
+     [![COMPAS_logo](img/compas.png)](https://www.lfenergy.org/projects/compas/)
     
 * For more technical usages, see below.
 
