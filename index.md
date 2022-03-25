@@ -35,7 +35,7 @@ A Java runtime - at least version 11 - is required to run them.
 
      [![TMW_logo](img/TMW_logo_black-072dpi.jpg)](https://www.trianglemicroworks.com)
 
-* COMPAS project, (Co)nfiguration (M)odules for (P)ower industry (A)utomation (S)ystems, from [LFEnergy](https://www.lfenergy.org/projects/compas/) also provides a [service to validate SCL Files](https://github.com/com-pas/compas-scl-validator) that uses RiseClipse
+* CoMPAS project, (Co)nfiguration (M)odules for (P)ower industry (A)utomation (S)ystems, from [LFEnergy](https://www.lfenergy.org/projects/compas/) also provides a [service to validate SCL Files](https://github.com/com-pas/compas-scl-validator) that uses RiseClipse
 
      [![COMPAS_logo](img/compas.png)](https://www.lfenergy.org/projects/compas/)
     
