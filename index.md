@@ -37,7 +37,7 @@ A Java runtime - at least version 11 - is required to run them.
 
 * COMPAS project, (Co)nfiguration (M)odules for (P)ower industry (A)utomation (S)ystems, from [LFEnergy](https://www.lfenergy.org/projects/compas/) provides a [service to validate SCL Files](https://github.com/com-pas/compas-scl-validator) that uses RiseClipse
 
-    [![COMPAS_logo](img/compas-horizontal-color.png)](https://www.lfenergy.org/projects/compas/)
+    [![COMPAS_logo](img/compas.png)](https://www.lfenergy.org/projects/compas/)
     
 * For more technical usages, see below.
 
