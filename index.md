@@ -20,7 +20,7 @@ longer explanation.
 |---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 
 RiseClipse is currently developed by the computer science department of 
-[CentraleSupélec](https://www.centralesupelec.fr) and by the MIRE department of 
+[CentraleSupélec](https://www.centralesupelec.fr) and by 
 [EDF R&D](https://www.edf.fr/en/the-edf-group/who-we-are/activities/research-and-development). 
 This collaboration is done in the context of the [RISEGrid 
 Institute](https://www.centralesupelec.fr/fr/linstitut-risegrid-research-institute-smarter-electric-grids).
