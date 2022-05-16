@@ -10,7 +10,7 @@ This validator can use OCL and NSD files. It is « Work In Progress » because N
 * Use it (`java -jar RiseClipseValidatorSCL-x.y.z.jar`) in a Terminal/Cmd window; the command line arguments are given in a usage message. More details on [command line options](validatorSCLcommandLineHelp.md).
 * The latest versions of RiseClipse OCL files for SCL are available in [this repository](https://github.com/riseclipse/riseclipse-ocl-constraints-scl2003), you can get the zip using the Code menu.
 * NSD files are available on [the IEC site](https://www.iec.ch/dyn/www/f?p=103:227:502877425777072::::FSP_ORG_ID,FSP_LANG_ID:1273,25). The latest core files, as of May 16, 2022, are (give to RiseClipse only the `.nsd` file from the zip):
-  * 2007A3: [IEC_61850-7-2](https://assets.iec.ch/public/tc57/IEC_61850-7-2.NSD.2007A3.Light.zip), [IEC_61850-7-3](https://assets.iec.ch/public/tc57/IEC_61850-7-3.NSD.2007A3.Light.zip), [IEC_61850-7-4](https://assets.iec.ch/public/tc57/IEC_61850-7-4.NSD.2007A3.light.zip)
+  * 2007A3: [IEC_61850-7-2](https://assets.iec.ch/public/tc57/IEC_61850-7-2.NSD.2007A3.light.zip), [IEC_61850-7-3](https://assets.iec.ch/public/tc57/IEC_61850-7-3.NSD.2007A3.light.zip), [IEC_61850-7-4](https://assets.iec.ch/public/tc57/IEC_61850-7-4.NSD.2007A3.light.zip)
   * 2007B4: [IEC_61850-7-2](https://assets.iec.ch/public/tc57/IEC_61850-7-2.NSD.2007B4.Light.zip), [IEC_61850-7-3](https://assets.iec.ch/public/tc57/IEC_61850-7-3.NSD.2007B4.Light.zip), [IEC_61850-7-4](https://assets.iec.ch/public/tc57/IEC_61850-7-4.NSD.2007B4.Light.zip)
 
 ### Validator with a graphical user interface
