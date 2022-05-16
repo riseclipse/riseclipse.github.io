@@ -30,17 +30,19 @@ same SCL file.
 * It is available [here](https://wdi.centralesupelec.fr/software/downloads/RiseClipse/RiseClipseValidatorSCL-1.1.0-a26rc.jar).
 * The corresponding NSD files must be given on the command line.
 
-## OCL Validators for ENTSO-E CGMES v2.4.15 (version 1.1.0 a3 - 20 January 2022, a Java runtime - at least version 11 - is required)
+## OCL Validators for ENTSO-E CGMES v3.0.0 (a Java runtime - at least version 11 - is required)
 ### Validator for a command line use
-* Download [this jar file](downloads/RiseClipseEntsoeCim16Validator-1.1.0-a3.jar) somewhere.
-* Use it (`java -jar RiseClipseValidatorCGMES-1.1.0-a3.jar`) in a Terminal/Cmd window; the command line arguments are given in a usage message.
-* OCL files for CGMES are available [in this archive](downloads/CGMES_OCL.zip).
+* Download the latest released `RiseClipseValidatorCGMES3-x.y.z.jar` [from this repository](https://github.com/riseclipse/riseclipse-validator-cgmes-3-0-0/releases)
+* Use it (`java -jar RiseClipseValidatorCGMES3-x.y.z.jar`) in a Terminal/Cmd window; the command line arguments are given in a usage message. More details on [command line options](validatorCGMEScommandLineHelp.md).
+* OCL files for CGMES are available in [this archive](downloads/CGMES3_OCL.zip); the latest RiseClipse versions are available in [this repository](https://github.com/riseclipse/riseclipse-ocl-constraints-cgmes-3).
 
 ### Validator with a graphical user interface
-* Download and unzip [this archive](downloads/RiseClipseValidatorCGMESApplication-1.1.0-a3.zip) somewhere.
-* Launch the jar (use the BAT file on Windows).
+* Download the latest released `RiseClipseValidatorCGMES3Application-x.y.z.jar` [from this repository](https://github.com/riseclipse/riseclipse-validator-cgmes-3-0-0/releases).
+* OCL files are expected to be in an `OCL` folder at the same level as the jar file; sub-folders can be used; see above for getting some.
+* Launch the jar.
 * Add one or more CGMES files using the button in the "CGMES Files" tab.
 * Optionally uncheck some OCL constraints in the "OCL Files" tab.
 * Start the validation using the Validate button in the "CGMES Files" tab.
 * A new window will appear with one general tab and one for each CGMES file.
+
 
