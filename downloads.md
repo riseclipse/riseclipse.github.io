@@ -27,7 +27,7 @@ These versions have added features; they are made available for testing purposes
 * The current version supports only IEC_61850-7 Edition 2.1. This version tries to support 
 multiple namespaces, including using both IEC_61850-7-2007A and IEC_61850-7-2007B in the 
 same SCL file.
-* It is available [here](https://wdi.centralesupelec.fr/software/downloads/RiseClipse/RiseClipseValidatorSCL-1.1.0-a26rc.jar).
+* A release-candidate is available [here](https://github.com/riseclipse/riseclipse-validator-scl2003/releases).
 * The corresponding NSD files must be given on the command line.
 
 ## OCL Validators for ENTSO-E CGMES v3.0.0 (a Java runtime - at least version 11 - is required)
