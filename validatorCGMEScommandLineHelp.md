@@ -44,6 +44,6 @@ at the end of the command line is also possible.
             
    ## Example of use
    
-    java -jar RiseClipseValidatorCGMES3-1.0.1.jar --merge MicroGid-BaseCase/MicroGrid-BaseCase-Merged.zip OCL >Result.txt
+    java -jar RiseClipseValidatorCGMES3-1.0.1.jar --merge MicroGrid-BaseCase-Merged.zip OCL >Result.txt
 
    
