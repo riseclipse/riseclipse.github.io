@@ -5,6 +5,8 @@
 ## Validator for IEC 61850 SCL 2003 (a Java runtime - at least version 11 - is required)
 This validator can use OCL and NSD files. It is « Work In Progress » because NSD support is incomplete (NOT IMPLEMENTED messages are sometimes displayed).
 
+There is a [ChangeLog](https://github.com/riseclipse/riseclipse-validator-scl2003/blob/master/CHANGELOG.md) about the main changes between the different versions.
+
 ### Validator for a command line use
 * Download the latest released `RiseClipseValidatorSCL-x.y.z.jar` [from this repository](https://github.com/riseclipse/riseclipse-validator-scl2003/releases)
 * Use it (`java -jar RiseClipseValidatorSCL-x.y.z.jar`) in a Terminal/Cmd window; the command line arguments are given in a usage message. More details on [command line options](validatorSCLcommandLineHelp.md).
@@ -25,12 +27,8 @@ This validator can use OCL and NSD files. It is « Work In Progress » because N
 ### Pre-release versions of validators
 These versions have added features; they are made available for testing purposes, any feedback is welcome by sending mail to Dominique MARCADET (dominique.marcadet *at* centralesupelec.fr).
 
-#### Namespaces support
-* The current version supports only IEC_61850-7 Edition 2.1. This version tries to support 
-multiple namespaces, including using both IEC_61850-7-2007A and IEC_61850-7-2007B in the 
-same SCL file.
-* A release-candidate is available [here](https://github.com/riseclipse/riseclipse-validator-scl2003/releases).
-* The corresponding NSD files must be given on the command line.
+#### Parameterized CDC and ServiceConstructedAttribute support
+* A pre-release is available [here](https://wdi.centralesupelec.fr/software/downloads/RiseClipse/RiseClipseValidatorSCL-1.2.4-SNAPSHOT.jar).
 
 ## Validator for ENTSO-E CGMES v3.0.0 (a Java runtime - at least version 11 - is required)
 ### Validator for a command line use
