@@ -24,11 +24,10 @@ There is a [ChangeLog](https://github.com/riseclipse/riseclipse-validator-scl200
 * Start the validation using the Validate button in the "SCL Files" tab.
 * A new window will appear with one general tab and one for each SCL file.
 
-### Pre-release versions of validators
-These versions have added features; they are made available for testing purposes, any feedback is welcome by sending mail to Dominique MARCADET (dominique.marcadet *at* centralesupelec.fr).
+### Pre-release version of validator
+This pre-release has added features; it is made available for testing purposes, any feedback is welcome by sending email to Dominique MARCADET (dominique.marcadet *at* centralesupelec.fr).
 
-#### Parameterized CDC and ServiceConstructedAttribute support
-* A pre-release is available [here](https://wdi.centralesupelec.fr/software/downloads/RiseClipse/RiseClipseValidatorSCL-1.2.4-SNAPSHOT.jar).
+* It is available [here](https://wdi.centralesupelec.fr/software/downloads/RiseClipse/RiseClipseValidatorSCL-1.2.4-SNAPSHOT.jar), see the added features in [ChangeLog](https://github.com/riseclipse/riseclipse-validator-scl2003/blob/master/CHANGELOG.md).
 
 ## Validator for ENTSO-E CGMES v3.0.0 (a Java runtime - at least version 11 - is required)
 ### Validator for a command line use
