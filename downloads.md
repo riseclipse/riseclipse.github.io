@@ -24,11 +24,6 @@ There is a [ChangeLog](https://github.com/riseclipse/riseclipse-validator-scl200
 * Start the validation using the Validate button in the "SCL Files" tab.
 * A new window will appear with one general tab and one for each SCL file.
 
-### Pre-release version of validator
-This release candidate has added features; it is made available for testing purposes before being declared as official release, any feedback is welcome by sending email to Dominique MARCADET (dominique.marcadet *at* centralesupelec.fr).
-
-* It is available [here](https://github.com/riseclipse/riseclipse-validator-scl2003/releases/tag/riseclipse-validator-scl2003-1.2.4), see the added features in [ChangeLog](https://github.com/riseclipse/riseclipse-validator-scl2003/blob/master/CHANGELOG.md).
-
 ## Validator for ENTSO-E CGMES v3.0.0 (a Java runtime - at least version 11 - is required)
 ### Validator for a command line use
 * Download the latest released `RiseClipseValidatorCGMES3-x.y.z.jar` [from this repository](https://github.com/riseclipse/riseclipse-validator-cgmes-3-0-0/releases)
