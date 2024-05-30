@@ -5,7 +5,7 @@
 ## RiseClipse summary
 
 RiseClipse is an umbrella name for tools based on MDE technologies and dedicated to IEC 
-standards. Open source RiseClipse components are availble under the EPL version 2.0. 
+standards. Open source RiseClipse components are available under the EPL version 2.0. 
 
 The main use of RiseClipse is to validate IEC CIM files and IEC 61850 SCL configuration 
 files : data described in these files are loaded in a way to become conformant with an UML 
@@ -13,6 +13,9 @@ model (either the CIM UML model or the SCL one), and OCL is used for validation.
 Therefore, the validation is not only done at the syntactic level but also at the semantic 
 one. See [this article](https://pscc-central.epfl.ch/repo/papers/2016/411.pdf) for a 
 longer explanation.
+
+![image](https://github.com/riseclipse/riseclipse.github.io/assets/62877587/9050f374-def3-4f3e-98fc-474492608c5d)
+
 
 ## RiseClipse developers
 
