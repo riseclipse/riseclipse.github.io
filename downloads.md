@@ -2,7 +2,7 @@
 
 ![Logo RiseClipe](img/small_logo_riseclipse.png)
 
-## Validator for IEC 61850 SCL 2003 (a Java runtime - at least version 11 - is required)
+## Validator for IEC 61850 SCL 2003 (a Java runtime - at least version 17 - is required)
 This validator can use OCL and NSD files. It is « Work In Progress » because NSD support is incomplete (NOT IMPLEMENTED messages are sometimes displayed).
 
 There is a [ChangeLog](https://github.com/riseclipse/riseclipse-validator-scl2003/blob/master/CHANGELOG.md) about the main changes between the different versions.
