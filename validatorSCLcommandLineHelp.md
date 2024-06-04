@@ -4,8 +4,8 @@
 
 ## Help for using the command lines
 
-    % java -jar RiseClipseValidatorSCL-1.2.1.jar --help
-    INFO    : Copyright (c) 2016-2022 CentraleSupélec & EDF.
+    % java -jar RiseClipseValidatorSCL-1.2.7.jar --help
+    INFO    : Copyright (c) 2016-2024 CentraleSupélec & EDF.
     INFO    : All rights reserved. This program and the accompanying materials
     INFO    : are made available under the terms of the Eclipse Public License v2.0
     INFO    : which accompanies this distribution, and is available at
@@ -21,7 +21,7 @@
     INFO    : Web site:
     INFO    :     https://riseclipse.github.io/
     INFO    :
-    INFO    : RiseClipseValidatorSCL version: 1.2.1 (19 April 2022)
+    INFO    : RiseClipseValidatorSCL version: 1.2.7 (16 May 2024)
     INFO    :
     INFO    : java -jar RiseClipseValidatorSCL.jar option* file*
     INFO    : 	Directories are searched recursively,
@@ -30,6 +30,7 @@
     INFO    : 	files ending with ".snsd" are considered ServiceNS files,
     INFO    : 	files ending with ".AppNS" are considered ApplicableServiceNS files (at most one should be given),
     INFO    : 	files ending with ".nsdoc" are considered NSDoc files,
+    INFO    : 	files ending with ".zip" are decompressed and each file inside is taken into account,
     INFO    : 	case is ignored for all these extensions,
     INFO    : 	all others are considered SCL files.
     INFO    :
@@ -52,21 +53,28 @@
     INFO    : 	--use-color
     INFO    : 		colors (using ANSI escape sequences) are used when displaying messages.
     INFO    : 	--make-explicit-links
-    INFO    : 		Implicit links in SCL files are made explicit, this is usually needed for complete validation. Warnings are displayed when problems are detected. Infos are displayed about explicit links being made. Verbosity is about how explicit links are made.
+    INFO    : 		Implicit links in SCL files are made explicit, this is usually needed for complete validation.
+    INFO    : 		Warnings are displayed when problems are detected. Infos are displayed about explicit links being made.
+    INFO    : 		Verbosity is about how explicit links are made.
     INFO    : 	--display-nsd-messages
-    INFO    : 		Only errors detected in NSD files are displayed by default. This option allows for other messages to be displayed (according to the chosen level).
+    INFO    : 		Only errors detected in NSD files are displayed by default.
+    INFO    : 		This option allows for other messages to be displayed (according to the chosen level).
     INFO    : 	--do-not-display-copyright
     INFO    : 		The tool information is not displayed at the beginning.
     INFO    : 	--use-filenames-starting-with-dot
     INFO    : 		Files whose name begins with a dot are not ignored.
+    INFO    : 	--use-different-exit-codes
+    INFO    : 		Normal exit code of validator is 1 if there is any validation error, 0 otherwise.
+    INFO    : 		If this option is used, exit code is 1 if there is any validation error,
+    INFO    : 		2 if there is any warning but no error, 3 if there is any notice message but no warning or error,
+    INFO    : 		4 if there is any info message but no notice or warning or error, 0 otherwise.
     INFO    : 	--help-environment
-    INFO    : 		Environment variables used are displayed.
-            
+    INFO    : 		Environment variables used are displayed.            
 Without the `--output` option, messages are written to the standard output, therefore redirection, using `>fileName.txt` 
 at the end of the command line is also possible.
             
    ## Example of use
    
-    java -jar RiseClipseValidatorSCL-1.2.1.jar --make-explicit-links fileToValidate.icd OCL NSD >Result.txt
+    java -jar RiseClipseValidatorSCL-1.2.7.jar --make-explicit-links fileToValidate.icd OCL NSD >Result.txt
 
    

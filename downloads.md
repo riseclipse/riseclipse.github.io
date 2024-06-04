@@ -2,7 +2,7 @@
 
 ![Logo RiseClipe](img/small_logo_riseclipse.png)
 
-## Validator for IEC 61850 SCL 2003 (a Java runtime - at least version 11 - is required)
+## Validator for IEC 61850 SCL 2003 (a Java runtime - at least version 17 - is required)
 This validator can use OCL and NSD files. It is « Work In Progress » because NSD support is incomplete (NOT IMPLEMENTED messages are sometimes displayed).
 
 There is a [ChangeLog](https://github.com/riseclipse/riseclipse-validator-scl2003/blob/master/CHANGELOG.md) about the main changes between the different versions.
@@ -24,7 +24,7 @@ There is a [ChangeLog](https://github.com/riseclipse/riseclipse-validator-scl200
 * Start the validation using the Validate button in the "SCL Files" tab.
 * A new window will appear with one general tab and one for each SCL file.
 
-## Validator for ENTSO-E CGMES v3.0.0 (a Java runtime - at least version 11 - is required)
+## Validator for ENTSO-E CGMES v3.0.0 (a Java runtime - at least version 17 - is required)
 ### Validator for a command line use
 * Download the latest released `RiseClipseValidatorCGMES3-x.y.z.jar` [from this repository](https://github.com/riseclipse/riseclipse-validator-cgmes-3-0-0/releases)
 * Use it (`java -jar RiseClipseValidatorCGMES3-x.y.z.jar`) in a Terminal/Cmd window; the command line arguments are given in a usage message. More details on [command line options](validatorCGMEScommandLineHelp.md).
