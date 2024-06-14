@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>riseclipse_output module &mdash; RiseClipse Python API 1.0.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=8d563738"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="riseclipse_parser module" href="riseclipse_parser.html" />
+    <link rel="prev" title="riseclipse_download module" href="riseclipse_download.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            RiseClipse Python API
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">riseclipse</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="java_runner.html">java_runner module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="riseclipse_download.html">riseclipse_download module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">riseclipse_output module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#riseclipse_output.RiseClipseOutput"><code class="docutils literal notranslate"><span class="pre">RiseClipseOutput</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#riseclipse_output.RiseClipseOutput.__init__"><code class="docutils literal notranslate"><span class="pre">RiseClipseOutput.__init__()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#riseclipse_output.RiseClipseOutput.get_errors"><code class="docutils literal notranslate"><span class="pre">RiseClipseOutput.get_errors()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#riseclipse_output.RiseClipseOutput.get_warnings"><code class="docutils literal notranslate"><span class="pre">RiseClipseOutput.get_warnings()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#riseclipse_output.RiseClipseOutput.get_notices"><code class="docutils literal notranslate"><span class="pre">RiseClipseOutput.get_notices()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#riseclipse_output.RiseClipseOutput.get_infos"><code class="docutils literal notranslate"><span class="pre">RiseClipseOutput.get_infos()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#riseclipse_output.RiseClipseOutput.get_only_warnings"><code class="docutils literal notranslate"><span class="pre">RiseClipseOutput.get_only_warnings()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#riseclipse_output.RiseClipseOutput.get_only_notices"><code class="docutils literal notranslate"><span class="pre">RiseClipseOutput.get_only_notices()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#riseclipse_output.RiseClipseOutput.get_only_infos"><code class="docutils literal notranslate"><span class="pre">RiseClipseOutput.get_only_infos()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#riseclipse_output.RiseClipseOutput.get_all_messages"><code class="docutils literal notranslate"><span class="pre">RiseClipseOutput.get_all_messages()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#riseclipse_output.RiseClipseOutput.get_messages_by_category"><code class="docutils literal notranslate"><span class="pre">RiseClipseOutput.get_messages_by_category()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#riseclipse_output.RiseClipseOutput.get_messages_by_specific_message"><code class="docutils literal notranslate"><span class="pre">RiseClipseOutput.get_messages_by_specific_message()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#riseclipse_output.RiseClipseOutput.get_messages_by_filename"><code class="docutils literal notranslate"><span class="pre">RiseClipseOutput.get_messages_by_filename()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#riseclipse_output.RiseClipseOutput.get_messages_by_line"><code class="docutils literal notranslate"><span class="pre">RiseClipseOutput.get_messages_by_line()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#riseclipse_output.RiseClipseOutput.get_messages_with_filter"><code class="docutils literal notranslate"><span class="pre">RiseClipseOutput.get_messages_with_filter()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#riseclipse_output.RiseClipseOutput.to_csv"><code class="docutils literal notranslate"><span class="pre">RiseClipseOutput.to_csv()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#riseclipse_output.RiseClipseOutput.to_json"><code class="docutils literal notranslate"><span class="pre">RiseClipseOutput.to_json()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="#riseclipse_output.RiseClipseOutput.to_dataframe"><code class="docutils literal notranslate"><span class="pre">RiseClipseOutput.to_dataframe()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="riseclipse_parser.html">riseclipse_parser module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="riseclipse_validator.html">riseclipse_validator module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="riseclipse_validator_scl.html">riseclipse_validator_scl module</a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RiseClipse Python API</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">riseclipse</a></li>
+      <li class="breadcrumb-item active">riseclipse_output module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/riseclipse_output.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-riseclipse_output">
+<span id="riseclipse-output-module"></span><h1>riseclipse_output module<a class="headerlink" href="#module-riseclipse_output" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="riseclipse_output.RiseClipseOutput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">riseclipse_output.</span></span><span class="sig-name descname"><span class="pre">RiseClipseOutput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_of_messages</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/riseclipse_output.html#RiseClipseOutput"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#riseclipse_output.RiseClipseOutput" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A class used to parse and categorize messages from the Validator in order to use them
+in Python scripts.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="riseclipse_output.RiseClipseOutput.__init__">
+<span class="sig-name descname"><span class="pre">__init__</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">list_of_messages</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/riseclipse_output.html#RiseClipseOutput.__init__"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#riseclipse_output.RiseClipseOutput.__init__" title="Link to this definition"></a></dt>
+<dd><p>Constructs all the necessary attributes for the RiseClipseOutput object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>list_of_messages</strong> – a list of messages to be parsed and categorized</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="riseclipse_output.RiseClipseOutput.get_errors">
+<span class="sig-name descname"><span class="pre">get_errors</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/riseclipse_output.html#RiseClipseOutput.get_errors"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#riseclipse_output.RiseClipseOutput.get_errors" title="Link to this definition"></a></dt>
+<dd><p>Returns a list of parsed error messages (dictionaries). To see the exact format,
+see <a class="reference internal" href="riseclipse_parser.html#riseclipse_parser.RiseClipseParser" title="riseclipse_parser.RiseClipseParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">RiseClipseParser</span></code></a>.</p>
+<p>If the list of errors is not empty, it returns the list. Otherwise, it parses the
+messages and appends any error messages to the list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>a list of parsed error messages</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="riseclipse_output.RiseClipseOutput.get_warnings">
+<span class="sig-name descname"><span class="pre">get_warnings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/riseclipse_output.html#RiseClipseOutput.get_warnings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#riseclipse_output.RiseClipseOutput.get_warnings" title="Link to this definition"></a></dt>
+<dd><p>Returns a list of parsed warning and error messages (dictionaries). To see the exact
+format, see <a class="reference internal" href="riseclipse_parser.html#riseclipse_parser.RiseClipseParser" title="riseclipse_parser.RiseClipseParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">RiseClipseParser</span></code></a>.</p>
+<p>If the list of warnings and errors is not empty, it returns the list. Otherwise,
+it parses the messages and appends any warning or error messages to the list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>a list of parsed warning and error messages</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="riseclipse_output.RiseClipseOutput.get_notices">
+<span class="sig-name descname"><span class="pre">get_notices</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/riseclipse_output.html#RiseClipseOutput.get_notices"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#riseclipse_output.RiseClipseOutput.get_notices" title="Link to this definition"></a></dt>
+<dd><p>Returns a list of parsed notice, warning and error messages (dictionaries).
+To see the exact format, see <a class="reference internal" href="riseclipse_parser.html#riseclipse_parser.RiseClipseParser" title="riseclipse_parser.RiseClipseParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">RiseClipseParser</span></code></a>.</p>
+<p>If the list of notices, warnings and errors is not empty, it returns the list.
+Otherwise, it parses the messages and appends any notice, warning and error messages
+to the list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>a list of parsed notice, warning and error messages</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="riseclipse_output.RiseClipseOutput.get_infos">
+<span class="sig-name descname"><span class="pre">get_infos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/riseclipse_output.html#RiseClipseOutput.get_infos"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#riseclipse_output.RiseClipseOutput.get_infos" title="Link to this definition"></a></dt>
+<dd><p>Returns a list of parsed info, notices, warnings and errors messages (dictionaries).
+To see the exact format, see <a class="reference internal" href="riseclipse_parser.html#riseclipse_parser.RiseClipseParser" title="riseclipse_parser.RiseClipseParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">RiseClipseParser</span></code></a>.</p>
+<p>If the list of infos, notices, warnings and errors is not empty, it returns the
+list. Otherwise, it parses the messages and appends any info, notice, warning and
+error messages to the list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>a list of parsed info, notice, warning and error messages</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="riseclipse_output.RiseClipseOutput.get_only_warnings">
+<span class="sig-name descname"><span class="pre">get_only_warnings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/riseclipse_output.html#RiseClipseOutput.get_only_warnings"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#riseclipse_output.RiseClipseOutput.get_only_warnings" title="Link to this definition"></a></dt>
+<dd><p>Returns a list of parsed warning messages (dictionaries). To see the exact format,
+see <a class="reference internal" href="riseclipse_parser.html#riseclipse_parser.RiseClipseParser" title="riseclipse_parser.RiseClipseParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">RiseClipseParser</span></code></a>.</p>
+<p>If the list of warnings is not empty, it returns the list. Otherwise, it parses
+the messages and appends any warning messages to the list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>a list of parsed warning messages</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="riseclipse_output.RiseClipseOutput.get_only_notices">
+<span class="sig-name descname"><span class="pre">get_only_notices</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/riseclipse_output.html#RiseClipseOutput.get_only_notices"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#riseclipse_output.RiseClipseOutput.get_only_notices" title="Link to this definition"></a></dt>
+<dd><p>Returns a list of parsed notice messages (dictionaries). To see the exact format,
+see <a class="reference internal" href="riseclipse_parser.html#riseclipse_parser.RiseClipseParser" title="riseclipse_parser.RiseClipseParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">RiseClipseParser</span></code></a>.</p>
+<p>If the list of notices is not empty, it returns the list. Otherwise, it parses the
+messages and appends any notice messages to the list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>a list of parsed notice messages</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="riseclipse_output.RiseClipseOutput.get_only_infos">
+<span class="sig-name descname"><span class="pre">get_only_infos</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/riseclipse_output.html#RiseClipseOutput.get_only_infos"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#riseclipse_output.RiseClipseOutput.get_only_infos" title="Link to this definition"></a></dt>
+<dd><p>Returns a list of parsed info messages (dictionaries). To see the exact format,
+see <a class="reference internal" href="riseclipse_parser.html#riseclipse_parser.RiseClipseParser" title="riseclipse_parser.RiseClipseParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">RiseClipseParser</span></code></a>.</p>
+<p>If the list of infos is not empty, it returns the list. Otherwise, it parses the
+messages and appends any info messages to the list.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>a list of parsed info messages</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="riseclipse_output.RiseClipseOutput.get_all_messages">
+<span class="sig-name descname"><span class="pre">get_all_messages</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/riseclipse_output.html#RiseClipseOutput.get_all_messages"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#riseclipse_output.RiseClipseOutput.get_all_messages" title="Link to this definition"></a></dt>
+<dd><p>Returns a list of all parsed messages (dictionaries). To see the exact format,
+see <a class="reference internal" href="riseclipse_parser.html#riseclipse_parser.RiseClipseParser" title="riseclipse_parser.RiseClipseParser"><code class="xref py py-class docutils literal notranslate"><span class="pre">RiseClipseParser</span></code></a>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>a list of all parsed messages</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="riseclipse_output.RiseClipseOutput.get_messages_by_category">
+<span class="sig-name descname"><span class="pre">get_messages_by_category</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">category</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/riseclipse_output.html#RiseClipseOutput.get_messages_by_category"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#riseclipse_output.RiseClipseOutput.get_messages_by_category" title="Link to this definition"></a></dt>
+<dd><p>Returns a list of messages, filtered by category.
+The category does not have to be an exact match, it can be a substring of the category.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>category</strong> – The category to filter the messages by</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>a list of parsed messages filtered by category</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="riseclipse_output.RiseClipseOutput.get_messages_by_specific_message">
+<span class="sig-name descname"><span class="pre">get_messages_by_specific_message</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/riseclipse_output.html#RiseClipseOutput.get_messages_by_specific_message"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#riseclipse_output.RiseClipseOutput.get_messages_by_specific_message" title="Link to this definition"></a></dt>
+<dd><p>Returns a list of messages, filtered by a specific part of message, named data.
+The data does not have to be an exact match, it can be a substring of the message.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>data</strong> – the “data” e.g. specific message to filter the messages by</p>
+</dd>
+</dl>
+<p>Returns:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="riseclipse_output.RiseClipseOutput.get_messages_by_filename">
+<span class="sig-name descname"><span class="pre">get_messages_by_filename</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/riseclipse_output.html#RiseClipseOutput.get_messages_by_filename"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#riseclipse_output.RiseClipseOutput.get_messages_by_filename" title="Link to this definition"></a></dt>
+<dd><p>Returns a list of messages, filtered by the file containing the error/warning/notice/info.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filename</strong> – The filename to filter the messages by</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>a list of parsed messages filtered by filename</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="riseclipse_output.RiseClipseOutput.get_messages_by_line">
+<span class="sig-name descname"><span class="pre">get_messages_by_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/riseclipse_output.html#RiseClipseOutput.get_messages_by_line"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#riseclipse_output.RiseClipseOutput.get_messages_by_line" title="Link to this definition"></a></dt>
+<dd><p>Returns a list of messages, filtered by the line number in the file containing
+the error/warning/notice/info.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>line</strong> – the line number to filter the messages by</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>a list of parsed messages filtered by line number</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="riseclipse_output.RiseClipseOutput.get_messages_with_filter">
+<span class="sig-name descname"><span class="pre">get_messages_with_filter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filtering_dict</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">dict</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">]</span></span></span></span><a class="reference internal" href="_modules/riseclipse_output.html#RiseClipseOutput.get_messages_with_filter"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#riseclipse_output.RiseClipseOutput.get_messages_with_filter" title="Link to this definition"></a></dt>
+<dd><p>Returns a list of messages, filtered with a dictionnary containing informations on
+which we want to filter messages in the file containing the error/warning/notice/info.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>filtering_dict</strong> – the filter itself, fields of the dictionary are the the same as a parsed message</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>a list of parsed messages filtered according to the filter</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="riseclipse_output.RiseClipseOutput.to_csv">
+<span class="sig-name descname"><span class="pre">to_csv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">separator</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">','</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/riseclipse_output.html#RiseClipseOutput.to_csv"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#riseclipse_output.RiseClipseOutput.to_csv" title="Link to this definition"></a></dt>
+<dd><p>Writes the parsed messages to a CSV file and returns the CSV as a string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> – The path to write the CSV file to</p></li>
+<li><p><strong>separator</strong> – The separator to use in the csv file</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>a string of the CSV file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="riseclipse_output.RiseClipseOutput.to_json">
+<span class="sig-name descname"><span class="pre">to_json</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">dict</span></span></span><a class="reference internal" href="_modules/riseclipse_output.html#RiseClipseOutput.to_json"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#riseclipse_output.RiseClipseOutput.to_json" title="Link to this definition"></a></dt>
+<dd><p>Writes the parsed messages to a JSON file and returns the JSON as a dictionary.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>path</strong> – The path to write the JSON file to</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>a dictionary of the JSON file</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="riseclipse_output.RiseClipseOutput.to_dataframe">
+<span class="sig-name descname"><span class="pre">to_dataframe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="reference internal" href="_modules/riseclipse_output.html#RiseClipseOutput.to_dataframe"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#riseclipse_output.RiseClipseOutput.to_dataframe" title="Link to this definition"></a></dt>
+<dd><p>Returns a pandas DataFrame of the parsed messages.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>a pandas DataFrame of the parsed messages</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="riseclipse_download.html" class="btn btn-neutral float-left" title="riseclipse_download module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="riseclipse_parser.html" class="btn btn-neutral float-right" title="riseclipse_parser module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, CentraleSupélec &amp; EDF.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
