@@ -55,6 +55,7 @@ A Java runtime - at least version 11 - is required to run them.
 * [RiseClipse technical](technical) (what is the technical basis of RiseClipse)
 * [RiseClipse source code](sourcecode) (where is available the source code)
 * [RiseClipse development](development) (how to contribute to RiseClipse)
+* [RiseClipse functional documentation](functionalDoc) (documentation on the validations that are performed)
 * [RiseClipse faq and contacts](contacts) (for any question not answered here)
 
 ## Acronyms with links
