@@ -19,14 +19,14 @@ longer explanation.
 
 ## RiseClipse developers
 
-| [![logo_CS](img/logo_CS.png)](https://www.centralesupelec.fr) | [![logo_RG](img/logo_RISEGrid_transparent.png)](https://www.centralesupelec.fr/fr/linstitut-risegrid-research-institute-smarter-electric-grids) | [![logo_EDF](img/logo_edf.jpeg)](https://www.edf.fr/en/the-edf-group/who-we-are/activities/research-and-development) |
+| [![logo_CS](img/logo_CS.png)](https://www.centralesupelec.fr) | [![logo_RG](img/logo_RISEGrid_transparent.png)](https://www.edf.fr/groupe-edf/inventer-lavenir-de-lenergie/rd-un-savoir-faire-mondial/toutes-les-actualites-de-la-rd/risegrid-la-recherche-sur-les-reseaux-electriques-intelligents) | [![logo_EDF](img/logo_edf.jpeg)](https://www.edf.fr/en/the-edf-group/who-we-are/activities/research-and-development) |
 |---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 
 RiseClipse is currently developed by the computer science department of 
 [CentraleSupélec](https://www.centralesupelec.fr) and by 
 [EDF R&D](https://www.edf.fr/en/the-edf-group/who-we-are/activities/research-and-development). 
 This collaboration is done in the context of the [RISEGrid 
-Institute](https://www.centralesupelec.fr/fr/linstitut-risegrid-research-institute-smarter-electric-grids).
+Institute](https://www.edf.fr/groupe-edf/inventer-lavenir-de-lenergie/rd-un-savoir-faire-mondial/toutes-les-actualites-de-la-rd/risegrid-la-recherche-sur-les-reseaux-electriques-intelligents).
 
 ## RiseClipse usage
 
