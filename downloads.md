@@ -32,10 +32,8 @@ Then, double click on the .cmd file to launch RiseClipse
     %JAVA_HOME%\bin\java.exe -jar RiseClipseValidatorSCLApplication-1.2.4.jar  
     PAUSE  
     ![exemple](img/exemple.png)  
-    
-    and replace "Launch the jar" by "double click on the ".cmd" file  
 
-* Launch the jar.
+* double click on the ".cmd" file.
 * Add one or more SCL files using the button in the "SCL Files" tab.
 * Optionally uncheck some OCL constraints in the "OCL Files" tab.
 * Start the validation using the Validate button in the "SCL Files" tab.
