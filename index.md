@@ -32,7 +32,7 @@ Institute](https://www.edf.fr/groupe-edf/inventer-lavenir-de-lenergie/rd-un-savo
 
 The IEC has published **IEC TS 61850-6-3**, titled *"Format of machine-processable rules for validation of IEC 61850 XML-based files"*. This Technical Specification explains how both standard and private OCL rules can be defined for validating IEC 61850 configuration files. In conjunction with this document, new OCL code components for IEC 61850 are published with the corresponding document (eg IEC 61850-6).
 
-The OCL rules **published by IEC** can be exectuded using the RiseClipse SCL validator, enabling the validation of any SCL file to ensure its conformity.
+The OCL rules **published by IEC** can be executed using the RiseClipse SCL validator, enabling the validation of any SCL file to ensure its conformity.
 
 ## RiseClipse usage
 
