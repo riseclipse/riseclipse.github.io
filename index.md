@@ -28,13 +28,17 @@ RiseClipse is currently developed by the computer science department of
 This collaboration is done in the context of the [RISEGrid 
 Institute](https://www.edf.fr/groupe-edf/inventer-lavenir-de-lenergie/rd-un-savoir-faire-mondial/toutes-les-actualites-de-la-rd/risegrid-la-recherche-sur-les-reseaux-electriques-intelligents).
 
+## RiseClipse for IEC TS 61850-6-3
+
+The IEC has published **IEC TS 61850-6-3**, titled *"Format of machine-processable rules for validation of IEC 61850 XML-based files"*. This Technical Specification explains how both standard and private OCL rules can be defined for validating IEC 61850 configuration files. In conjunction with this document, new OCL code components for IEC 61850 are published with the corresponding document (eg IEC 61850-6).
+
+The OCL rules **published by IEC** can be executed using the RiseClipse SCL validator, enabling the validation of any SCL file to ensure its conformity.
+
 ## RiseClipse usage
 
-* The simplest solution to validate CIM and SCL files is to use the 
-[web site provided by EDF](https://rise-clipse.pam-retd.fr/).
-* You can also download « fat jar » tools on [RiseClipse downloads](downloads) (either with a command line interface or with a 
+* You can download « fat jar » tools on [RiseClipse downloads](downloads) (either with a command line interface or with a 
 simplified graphical user interface). 
-A Java runtime - at least version 11 - is required to run them.
+A Java runtime - at least version 21 - is required to run them.
 * Another option is to use a 
 [docker image](https://hub.docker.com/r/riseclipse/).
 * Another method is to download a free [SCL Reader](https://www.trianglemicroworks.com/products/testing-and-configuration-tools/scl-navigator-pages/overview) from [Triangle MicroWorks, Inc](https://www.trianglemicroworks.com). First, download a 14 day evaluation license of [SCL Navigator](https://www.trianglemicroworks.com/products/testing-and-configuration-tools/scl-navigator-pages/overview) and apply the product key ‘freetool’. After 14 days, you will continue to have access to a free [SCL Reader](https://www.trianglemicroworks.com/products/testing-and-configuration-tools/scl-navigator-pages/overview) using OCL Verify to validate SCL files based on RiseClipse.

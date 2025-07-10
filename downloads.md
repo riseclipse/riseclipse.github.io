@@ -16,9 +16,25 @@ There is a [ChangeLog](https://github.com/riseclipse/riseclipse-validator-scl200
   * 2007B4: [IEC_61850-7-2](https://assets.iec.ch/public/tc57/IEC_61850-7-2.NSD.2007B4.Light.zip), [IEC_61850-7-3](https://assets.iec.ch/public/tc57/IEC_61850-7-3.NSD.2007B4.Light.zip), [IEC_61850-7-4](https://assets.iec.ch/public/tc57/IEC_61850-7-4.NSD.2007B4.Light.zip)
 
 ### Validator with a graphical user interface
-* Download the latest released `RiseClipseValidatorSCLApplication-x.y.z.jar` [from this repository](https://github.com/riseclipse/riseclipse-validator-scl2003/releases).
+* Download the latest released jar file `RiseClipseValidatorSCLApplication-x.y.z.jar` [from this repository](https://github.com/riseclipse/riseclipse-validator-scl2003/releases).
 * OCL (resp: NSD) files are expected to be in an `OCL` (resp: `NSD`) folder at the same level as the jar file; sub-folders can be used; see above for getting some.
-* Launch the jar.
+* To run the jar files, java 21 or + is needed.
+* If you do not have it installed on your laptop (or an older version), you can download one from here: https://openjdk.org/ or https://adoptium.net/.  
+On Windows, you can put a .cmd file near the .jar files, with the content bellow.
+Modify it to put the correct path to your OpenJDK folder.
+Then, double click on the .cmd file to launch RiseClipse
+   
+   ```
+   @echo OFF  
+    SET BINS=%~dp0  
+    ECHO %BINS%  
+    SET JAVA_HOME=C:\Temp\OpenJDK_folder_name  
+    SET PATH=%JAVA_HOME%\bin;%PATH%  
+    %JAVA_HOME%\bin\java.exe -jar RiseClipseValidatorSCLApplication-1.2.4.jar  
+    PAUSE
+   ```
+    ![exemple](img/exemple.png)  
+
 * Add one or more SCL files using the button in the "SCL Files" tab.
 * Optionally uncheck some OCL constraints in the "OCL Files" tab.
 * Start the validation using the Validate button in the "SCL Files" tab.
