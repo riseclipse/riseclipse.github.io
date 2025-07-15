@@ -8,7 +8,9 @@ This validator can use OCL and NSD files. It is « Work In Progress » because N
 There is a [ChangeLog](https://github.com/riseclipse/riseclipse-validator-scl2003/blob/master/CHANGELOG.md) about the main changes between the different versions.
 
 ### Validator for a command line use (a Java runtime - at least version 21 - is required)
-* Download the latest released `RiseClipseValidatorSCL-x.y.z.jar` [from this repository](https://github.com/riseclipse/riseclipse-validator-scl2003/releases)
+* Download [from this repository](https://github.com/riseclipse/riseclipse-validator-scl2003/releases):
+  * the latest released jar: file `RiseClipseValidatorSCL-x.y.z.jar`  (a Java runtime - at least version 21 - is required),
+  * or the latest released jar file in a zip: `RiseClipseValidatorSCL-x.y.z.zip` (a Java runtime - at least version 21 - is required),
 * Use it (`java -jar RiseClipseValidatorSCL-x.y.z.jar`) in a Terminal/Cmd window; the command line arguments are given in a usage message. More details on [command line options](validatorSCLcommandLineHelp.md).
 * The latest versions of RiseClipse OCL files for SCL are available in [this repository](https://github.com/riseclipse/riseclipse-ocl-constraints-scl2003), you can get the zip using the Code menu.
 * NSD files are available on [the IEC site](https://www.iec.ch/dyn/www/f?p=103:227:502877425777072::::FSP_ORG_ID,FSP_LANG_ID:1273,25). The latest core files, as of July 10, 2025, are (give to RiseClipse only the `.nsd` file from the zip):
@@ -18,7 +20,7 @@ There is a [ChangeLog](https://github.com/riseclipse/riseclipse-validator-scl200
 
 ### Validator with a graphical user interface
 * Download [from this repository](https://github.com/riseclipse/riseclipse-validator-scl2003/releases):
-  * the latest released jar: file `RiseClipseValidatorSCLApplication-x.y.z.jar`  (a Java runtime - at least version 21 - is required),
+  * the latest released jar: file `RiseClipseValidatorSCLApplication-x.y.z.jar` (a Java runtime - at least version 21 - is required),
   * or the latest released jar file in a zip: `RiseClipseValidatorSCLApplication-x.y.z.zip`  (a Java runtime - at least version 21 - is required),
   * or, on Windows, an installer of the latest released jar bundled with a JRE: `RiseClipseValidatorSCLApplication-x.y.z.msi`.
  * OCL (resp: NSD) files are expected to be in an `OCL` (resp: `NSD`) folder at the same level as the jar file; sub-folders can be used; see above for getting some.
