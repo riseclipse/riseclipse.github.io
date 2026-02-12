@@ -17,6 +17,15 @@ There is a [ChangeLog](https://github.com/riseclipse/riseclipse-validator-scl200
   * 2007A3: [IEC_61850-7-2](https://assets.iec.ch/public/tc57/IEC_61850-7-2.NSD.2007A3.light.zip), [IEC_61850-7-3](https://assets.iec.ch/public/tc57/IEC_61850-7-3.NSD.2007A3.light.zip), [IEC_61850-7-4](https://assets.iec.ch/public/tc57/IEC_61850-7-4.NSD.2007A3.light.zip)
   * 2007B4: [IEC_61850-7-2](https://assets.iec.ch/public/tc57/IEC_61850-7-2.NSD.2007B4.Light.zip), [IEC_61850-7-3](https://assets.iec.ch/public/tc57/IEC_61850-7-3.NSD.2007B4.Light.zip), [IEC_61850-7-4](https://assets.iec.ch/public/tc57/IEC_61850-7-4.NSD.2007B4.Light.zip)
   * 2007B5: [IEC_61850-7-2](https://assets.iec.ch/public/tc57/IEC_61850-7-2.NSD.2007B5.Light.zip), [IEC_61850-7-3](https://assets.iec.ch/public/tc57/IEC_61850-7-3.NSD.2007B5.Light.zip), [IEC_61850-7-4](https://assets.iec.ch/public/tc57/IEC_61850-7-4.NSD.2007B5.Light.zip)
+    
+#### Validator for a command line use - Excel-compatible result (a Java runtime - at least version 21 - is required)
+* The validation result can be generated as a CSV file, suitable for Excel (filtering, sorting,...), using this command-line options:
+* It is also possible to validate several files at once by providing a ZIP file
+> java -jar RiseClipseValidatorSCL-x.y.z.jar
+> --make-explicit-links
+> --do-not-display-copyright
+> --format-string "%5$s;%1$s;%2$s;%4$s;%3$s"
+> "file(s)ToValidate" OCL NSD >result.csv
 
 ### Validator with a graphical user interface
 * Download [from this repository](https://github.com/riseclipse/riseclipse-validator-scl2003/releases):
